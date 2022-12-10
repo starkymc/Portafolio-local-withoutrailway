@@ -93,14 +93,6 @@ class formPortafolio(View):
     context = {}
 
 
-    #funcion para mostrar los portafolios en index
-    def get_portafolios(self,request):
-        formx = PortafioForm()
-        self.context['formx'] = formx
-        self.context['detailx']  = Portafolio.objects.all()
-        
-        return render(request,self.template_getall,self.context)
-    # aun no funcionando
 
 
     def get(self,request):
