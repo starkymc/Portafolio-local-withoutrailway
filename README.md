@@ -17,7 +17,7 @@
 
 ### Para poder correr el proyecto correctamente debes seguir los pasos siguientes:
 ### Clonar el repositorio en la terminal
-    git clone https://github.com/starkymc/Portafolio
+    git clone https://github.com/starkymc/Portafolio-local-withoutrailway
 
 
 ### Dentro de nuestra carpeta creamos nuestro entorno virtual
