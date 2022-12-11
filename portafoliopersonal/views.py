@@ -93,8 +93,6 @@ class formPortafolio(View):
     context = {}
 
 
-
-
     def get(self,request):
         form = PortafioForm()
         self.context['form'] = form
