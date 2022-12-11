@@ -2,7 +2,8 @@ from django.contrib import admin
 from django.urls import path
 from django.contrib.auth.decorators import login_required
 from portafoliopersonal.views import ( Prueba,LoginView,
-home, signup, signin,signout,profile,formPortafolio,login,signoutx, requiredloginxportafolio)
+home, signup, signin,signout,profile,formPortafolio,login,signoutx, requiredloginxportafolio,
+urlpreview,generate_preview)
 
 #signoutx
 
@@ -32,5 +33,12 @@ urlpatterns = [
     path('signoutx/',signoutx, name='signoutx'),
     path('login/',login, name='login'),
     path('requiredxportf/',requiredloginxportafolio, name='loginrequiredpf'),
+
+
+    # preview-link
+    path('urlpreview/', urlpreview, name='generate_preview'),
+    path('generate_preview/', generate_preview, name='generate'),
+
+    ###
 ]
 
