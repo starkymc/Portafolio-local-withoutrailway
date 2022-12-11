@@ -47,6 +47,9 @@
         }
     }
 
+### Creamos nuestra base de datos en MySQL
+    create database portafolio;
+
 ### Hacemos las migraciones en la terminal
     python manage.py makemigrations
     python manage.py migrate
