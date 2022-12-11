@@ -5,10 +5,6 @@
 <img aling="center" width="900" height="400" src="index.png" />
 </div>
 
-### 
-
-![image-portafolio](https://example.com/link-to-image)
-[Youtube demo](https://www.youtube.com/watch?v=HJ986S9yxWo "link title")
 
 
 
@@ -19,6 +15,10 @@
 - https://github.com/starkymc/Portafolio-local-withoutrailway
 
 <hr>
+
+## Youtube
+![image-portafolio](youtube.png) <br>
+[Youtube demo - Click aqui](https://www.youtube.com/watch?v=HJ986S9yxWo "link title")
 
 # Vamos al proyecto! 
 
