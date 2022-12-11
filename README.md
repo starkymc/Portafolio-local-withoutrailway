@@ -18,9 +18,11 @@
 ### Para poder correr el proyecto correctamente debes seguir los pasos siguientes:
 ### Clonar el repositorio en la terminal
     git clone https://github.com/starkymc/Portafolio-local-withoutrailway
+    
+### Entramos a la carpeta Portafolio
+    cd Portafolio
 
-
-### Dentro de nuestra carpeta creamos nuestro entorno virtual
+### Dentro de nuestra proyecto creamos nuestro entorno virtual
     virtualenv -p python3 env
 
 ### Entramos al entorno virtual
