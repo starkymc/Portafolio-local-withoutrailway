@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path
 from django.contrib.auth.decorators import login_required
-from portafoliopersonal.views import ( Prueba,LoginView,
+from portafoliopersonal.views import (
 home, signup, signin,signout,profile,formPortafolio,login,signoutx, requiredloginxportafolio,
-urlpreview,generate_preview)
+generate_preview)
 
 #signoutx
 
@@ -14,7 +14,7 @@ urlpatterns = [
 
     #path('signin/portafolio/',PortafolioP, name='signin'),
 
-    path('prueba/', Prueba.as_view(), name='prueba'),
+
     #path('login/', LoginView.as_view(), name='login'),
 
 
@@ -36,7 +36,7 @@ urlpatterns = [
 
 
     # preview-link
-    path('urlpreview/', urlpreview, name='generate_preview'),
+    #path('urlpreview/', urlpreview, name='generate_preview'),
     path('generate_preview/', generate_preview, name='generate'),
 
     ###

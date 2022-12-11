@@ -86,11 +86,9 @@ def signoutx(request):
     return redirect('/')    
 
 
-#Creacion de link preview
-def urlpreview(request):
-    return render(request, 'url-preview.html')
 
 
+# funcion generar la vista aqui se llaman las 3 funciones creadas
 def generate_preview(request):
     headers = {
         'Access-Control-Allow-Origin': '*',
@@ -114,7 +112,7 @@ def generate_preview(request):
 
     return JsonResponse(meta_data)
 
-
+# funcion para obtener description de  title
 def get_title(html):
     """Scrape page title."""
     title = None
@@ -128,7 +126,7 @@ def get_title(html):
         title = html.find("h1").string
     return title
 
-
+# funcion para obtener description de  url
 def get_description(html):
     """Scrape page description."""
     description = None
@@ -144,9 +142,9 @@ def get_description(html):
         description = html.find("p").contents
     return description
 
-
+# funcion para obtener imagen previa de  url
 def get_image(html):
-    """Scrape share image."""
+
     image = None
     if html.find("meta", property="image"):
         image = html.find("meta", property="image").get('content')
@@ -185,12 +183,13 @@ class formPortafolio(View):
         form = PortafioForm(request.POST)
         if form.is_valid():
             form.save()
-
+            self.context['detail'] = Portafolio.objects.all()
+            return render(request, 'index.html', self.context)
+        else:
+            return HttpResponse("No se pudo guardar el proyecto")
+            #return render(request, 'index.html', self.context)
         #self.context['form'] = form
-        self.context['detail'] = Portafolio.objects.all()
-
-        #return redirect(request, '/signin', self.context)
-        return render(request, 'index.html', self.context)
+            
 
    
 
@@ -202,31 +201,5 @@ def requiredloginxportafolio(request):
 
 
 
-class LoginView(ListView):
-    model = Login
-    template_name = 'login.html'
 
 
-class Prueba(ListView):
-    model = Login
-    template_name = 'prueba.html'
-
-
-class LoginFormInsert(View):
-    def get(self, request):
-        Frmlogin = LoginForm()
-
-        context = {'form': Frmlogin} 
-
-        return render (request,'login.html', context)
-
-    def post(self, request):
-        formulario = LoginForm(request.POST)
-        if formulario.is_valid():
-            request.session['name_insert'] = formulario.cleaned_data['name']
-            request.session['password_insert'] = formulario.cleaned_data['password']
-            nameI = request.session['name_insert']
-            passwordI = request.session['password_insert']
-
-            return HttpResponse(f'El usuario es: {nameI} y la contraseña es: {passwordI}')
-        return HttpResponse('Valores del formulario invalidos')

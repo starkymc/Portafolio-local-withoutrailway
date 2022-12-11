@@ -66,7 +66,7 @@
                     <h2 class="text-3xl  font-bold mb-5 ">Crear un nuevo proyecto</h2>
                     
                    
-
+                     <!-- columna foto -->
                     <label class="form-label inline-block mb-2 text-gray-700 ">{{ form.foto.label}}</label>
                     <input type="url" name="foto" maxlength="400" required="" id="id_foto"  class="form-control 
                       block
@@ -85,9 +85,9 @@
                       focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInputEmail1"
                       aria-describedby="nameHelp" placeholder="Ingresa la url de la imagen del proyecto">
                   </div>
-                  <!-- final columna first_name -->
+                  <!-- final columna foto -->
     
-                  <!-- columna last_name -->
+                  <!-- columna proyecto -->
                   <div class="form-group mb-6">
                     <label for="exampleInputPassword1" class="form-label inline-block mb-2 text-gray-700">{{ form.project_name.label}}</label>
                     <input type="text" name="project_name" maxlength="50" required="" id="id_project_name" class="form-control block
@@ -106,9 +106,9 @@
                       focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
                       placeholder="Ingresa el nombre del proyecto">
                   </div>
-                  <!-- final columna last_name -->
+                  <!-- final columna proyecto -->
     
-                  <!-- columna salario -->
+                  <!-- columna description -->
                   <div class="form-group mb-6">
                     <label for="exampleInputPassword1" class="form-label inline-block mb-2 text-gray-700">{{ form.description.label}}</label>
                     <input type="text" name="description" maxlength="500" required="" id="id_description" class="form-control block w-full px-3
@@ -125,9 +125,31 @@
                       focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
                       placeholder="Ingresa la descripcion del proyecto">
                   </div>
-                  <!-- final columna salario -->
+                  <!-- final columna description -->
 
-                    <!-- columna salario -->
+
+                   <!-- columna url -->
+                   <div class="form-group mb-6">
+                    <label for="id_github" class="form-label inline-block mb-2 text-gray-700">{{ form.github.label}}</label>
+                    <input type="url" name="github" maxlength="450" required="" id="id_github" class="form-control block w-full px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-700
+                      bg-white bg-clip-padding
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+                      placeholder=" Ingresa url de github del proyecto">
+                  </div>
+                  <!-- final columna url -->
+
+
+
+                    <!-- columna tags -->
                     <div class="form-group mb-6">
                         <label for="exampleInputPassword1" class="form-label inline-block mb-2 text-gray-700">{{ form.tags.label}}</label>
                         <input type="text" name="tags" maxlength="100" required="" id="id_tags" class="form-control block w-full px-3
@@ -144,26 +166,9 @@
                           focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
                           placeholder="Lenguajes de programacion usados">
                       </div>
-                      <!-- final columna salario -->
+                      <!-- final columna tags -->
     
-                        <!-- columna salario -->
-                    <div class="form-group mb-6">
-                        <label for="id_github" class="form-label inline-block mb-2 text-gray-700">{{ form.github.label}}</label>
-                        <input type="url" name="github" maxlength="450" required="" id="id_github" class="form-control block w-full px-3
-                          py-1.5
-                          text-base
-                          font-normal
-                          text-gray-700
-                          bg-white bg-clip-padding
-                          border border-solid border-gray-300
-                          rounded
-                          transition
-                          ease-in-out
-                          m-0
-                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
-                          placeholder=" Ingresa url de github del proyecto">
-                      </div>
-                      <!-- final columna salario -->
+                       
                      
                   
 
