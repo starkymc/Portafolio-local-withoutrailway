@@ -1,8 +1,19 @@
 <h1 align="center">Proyecto Portafolio</h1>
+<hr>
 
 <div align="center">
 <img aling="center" width="900" height="400" src="index.png" />
 </div>
+
+### Projecto principal donde se trabajo inicialmente y donde estan todos los commits, y se trato de añadir a railway sin exito
+- https://github.com/starkymc/Portafolio
+    
+### Creacion de Projecto principal localmente funcionando
+- https://github.com/starkymc/Portafolio-local-withoutrailway
+
+<hr>
+
+# Vamos al proyecto! 
 
 ### Para poder correr el proyecto correctamente debes seguir los pasos siguientes:
 ### Clonar el repositorio en la terminal
