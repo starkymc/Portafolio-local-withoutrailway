@@ -8,7 +8,7 @@
 
 
 
-### Projecto principal donde se trabajo inicialmente y donde estan todos los commits, y se trato de añadir a railway sin exito
+### Projecto principal donde se trabajo inicialmente y donde estan todos los commits, y se subio a Railway
 - https://github.com/starkymc/Portafolio
     
 ### Creacion de Projecto principal localmente funcionando
