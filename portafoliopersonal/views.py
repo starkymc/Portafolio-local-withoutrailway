@@ -35,9 +35,9 @@ def signup(request):
                 login(request, user)
                 return redirect('profile')
             except IntegrityError:
-                return render(request, 'signup.html', {"form": UserCreationForm, "error": "Username already exists."})
+                return render(request, 'signup.html', {"form": UserCreationForm, "error": "Usuario ya existe."})
 
-        return render(request, 'signup.html', {"form": UserCreationForm, "error": "Passwords did not match."})
+        return render(request, 'signup.html', {"form": UserCreationForm, "error": "Las contraseñas no coinci."})
 
 
 
@@ -54,7 +54,7 @@ def signin(request):
         user = authenticate(
             request, username=request.POST['username'], password=request.POST['password'])
         if user is None:
-            return render(request, 'signin.html', {"form": AuthenticationForm, "error": "Username or password is incorrect."})
+            return render(request, 'signin.html', {"form": AuthenticationForm, "error": "Usuario o contraseña incorrecta."})
 
         login(request, user)
         return redirect('profile')
@@ -81,7 +81,8 @@ def signoutx(request):
     return redirect('/')    
 
 
-
+def profile_sinuser(request):
+    return render(request,'index.html')
 
 # funcion generar la vista aqui se llaman las 3 funciones creadas
 def generate_preview(request):
