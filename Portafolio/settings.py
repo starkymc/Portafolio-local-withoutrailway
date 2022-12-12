@@ -82,9 +82,9 @@ DATABASES = {
         # DO NOT PUSH TO REPOSITORY
         'NAME': 'portafolio',
         # DO NOT PUSH TO REPOSITORY
-        'USER': '',
+        'USER': 'root',
         # DO NOT PUSH TO REPOSITORY
-        'PASSWORD': '',
+        'PASSWORD': 'amores12',
         # DO NOT PUSH TO REPOSITORY
         'HOST': 'localhost',
         # DO NOT PUSH TO REPOSITORY
