@@ -177,3 +177,7 @@ def requiredloginxportafolio(request):
 
 
 
+def delete(request, id_port):
+    porta = Portafolio.objects.get(pk=id_port)
+    porta.delete()
+    return redirect ('profile')

@@ -4,7 +4,7 @@ from portafoliopersonal import views
 from django.contrib.auth.decorators import login_required
 from portafoliopersonal.views import (
 home, signup, signin,signout,profile,signoutx, requiredloginxportafolio,
-generate_preview,crear,profile_sinuser)
+generate_preview,crear,profile_sinuser,delete)
 
 #signoutx
 
@@ -38,6 +38,7 @@ urlpatterns = [
     path('generate_preview/', generate_preview, name='generate'),
     ###
     path('crear/', login_required(views.crear,login_url='/requiredxportf/'), name='create'),
-    #path('crearportafolio/',login_required(formPortafolio.as_view(),login_url='/requiredxportf/'), name='crear'),
+    #path('crearportafolio/}',login_required(formPortafolio.as_view(),login_url='/requiredxportf/'), name='crear'),
+    path('crear/<int:id_port>/delete', views.delete, name='delete'),
 ]
 

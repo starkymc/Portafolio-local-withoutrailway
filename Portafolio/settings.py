@@ -84,7 +84,7 @@ DATABASES = {
         # DO NOT PUSH TO REPOSITORY
         'USER': 'root',
         # DO NOT PUSH TO REPOSITORY
-        'PASSWORD': 'flutter15',
+        'PASSWORD': 'sully12',
         # DO NOT PUSH TO REPOSITORY
         'HOST': 'localhost',
         # DO NOT PUSH TO REPOSITORY
